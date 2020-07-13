@@ -1,5 +1,5 @@
 # picture-puzzle-matching
-Picture puzzle match using SIFT
+使用SIFT算法的拼图匹配
 
 ### 一、安装依赖
 * Python 3
@@ -17,6 +17,8 @@ Anaconda下载地址：https://www.anaconda.com/products/individual
 
 激活虚拟环境后，安装依赖：`pip install -r requirements.txt`
 
+**注意：如果原环境中已经安装了更高版本的opencv-python，请先卸载原有的版本`pip uninstall opencv-python`**
+
 ## 二、拼图匹配
 ### 运行测试程序
 
@@ -26,6 +28,11 @@ Anaconda下载地址：https://www.anaconda.com/products/individual
 python detect_and_matching.py
 ```
 ### 运行结果
-![avatar](full.png)
-![avatar](part.jpg)
+目标拼图：
+![avatar](./figures/full.png)
+散乱拼图：
+![avatar](./figures/template.jpg)
+匹配结果：
+![avatar](./figures/part.jpg)
+
 

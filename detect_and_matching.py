@@ -176,7 +176,6 @@ if __name__ == "__main__":
                 result = cv2.drawMatches(template,kp1,target,kp2,good,None,**draw_params)
                 cv2.imshow('result', result)
                 cv2.waitKey(0)
-                cv2.imwrite("./{}.jpg".format(num_y * i + j), result)
 
             cv2.destroyAllWindows()
 
