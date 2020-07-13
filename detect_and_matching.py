@@ -1,9 +1,8 @@
-import cv2
-import numpy as np
-from matplotlib import pyplot as plt
-from timeit import default_timer as timer
 import os
-import matplotlib.pyplot as plt
+import numpy as np
+import cv2
+from timeit import default_timer as timer
+
 
 
 def GetROI(image, background, show_image_flag=0):
@@ -177,6 +176,7 @@ if __name__ == "__main__":
                 result = cv2.drawMatches(template,kp1,target,kp2,good,None,**draw_params)
                 cv2.imshow('result', result)
                 cv2.waitKey(0)
+                cv2.imwrite("./{}.jpg".format(num_y * i + j), result)
 
             cv2.destroyAllWindows()
 
