@@ -1,5 +1,5 @@
 # picture-puzzle-matching
-使用SIFT算法的拼图匹配
+基于SIFT算法的拼图匹配
 
 ### 一、安装依赖
 * Python 3
